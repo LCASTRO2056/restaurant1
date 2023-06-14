@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let p of productos" [routerLink]="['/productos', p.id]">
+      <ion-avatar slot="start"> <!-- Le ponemos el formato avatar a la imagen y la ordenamos al inicio -->
+        <ion-img src="{{p.url}}"></ion-img>
+      </ion-avatar>
+      <ion-label>{{p.titulo}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

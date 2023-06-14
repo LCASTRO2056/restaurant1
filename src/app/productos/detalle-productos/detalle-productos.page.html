@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="datos">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+        <div>
+          <ion-button class="ion-margin" color="dark">
+            <ion-icon name="sunny-outline"></ion-icon>
+          </ion-button>
+          <ion-button class="ion-margin" color="dark">
+            <ion-icon name="sunny-outline"></ion-icon>
+          </ion-button>
+          <ion-button class="ion-margin" color="dark">
+            <ion-icon name="sunny-outline"></ion-icon>
+          </ion-button>
+          <ion-button class="ion-margin" color="dark">
+            <ion-icon name="sunny-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col>
+        <ion-button fill="clear" class="editar" color="light">
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="9">
+        <img [src]="datos.url" class="imagen"> 
+      </ion-col>
+
+      <ion-col>
+
+        <div class="linea-gris"></div>
+
+        <ion-label class="ion-text-center">
+          <p>Nombre del Producto</p>
+          <p>{{datos.titulo}}</p>
+        </ion-label>
+
+        <div class="linea-gris"></div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-row>
+        <ion-col size="6" class="ion-text-center descripcion">
+          <ion-button fill="clear" color="light">
+            Volver
+          </ion-button>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-button fill="clear" color="dark">
+            descripcion
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
+
+<!-- <ion-footer>
+  <p>Todos los derechos reservados</p>
+</ion-footer> -->
